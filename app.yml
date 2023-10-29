@@ -1,0 +1,12 @@
+runtime: php
+env: flex
+entrypoint: gunicorn -b :$PORT main:app
+
+runtime_config:
+  operating_system: "ubuntu22"
+  runtime_version: "8.2"
+
+#[START gae_flex_storage_yaml]
+env_variables:
+  CLOUD_STORAGE_BUCKET: profileapp-endang
+#[END gae_flex_storage_yaml]
