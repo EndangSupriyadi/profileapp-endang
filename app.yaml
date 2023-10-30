@@ -1,5 +1,5 @@
 runtime: php
-env: flex
+# env: flex
 entrypoint: gunicorn -b :$PORT main:app
 
 runtime_config:
@@ -12,14 +12,14 @@ env_variables:
 #[END gae_flex_storage_yaml]
 
 
-resources:
-  cpu: 2
-  memory_gb: 2.3
-  disk_size_gb: 10
-  volumes:
-  - name: ramdisk1
-    volume_type: tmpfs
-    size_gb: 0.5
+# resources:
+#   cpu: 2
+#   memory_gb: 2.3
+#   disk_size_gb: 10
+#   volumes:
+#   - name: ramdisk1
+#     volume_type: tmpfs
+#     size_gb: 0.5
 
 # runtime: php
 # env: flex
