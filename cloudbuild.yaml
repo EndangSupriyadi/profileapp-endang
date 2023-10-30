@@ -1,4 +1,0 @@
-runtime: custom
-env: flex
-env_variables:
- CLOUD_STORAGE_BUCKET: [profileapp-endang]
