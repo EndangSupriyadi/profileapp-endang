@@ -6,7 +6,7 @@ runtime_config:
 env: flex
 entrypoint: gunicorn -b :$PORT main:app
 
-service: v1.my-service.profileapp-endang
+# service: v1.my-service.profileapp-endang
 
 env_variables:
  CLOUD_STORAGE_BUCKET: [profileapp-endang]
