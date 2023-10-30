@@ -4,7 +4,7 @@ entrypoint: gunicorn -b :$PORT main:app
 
 runtime_config:
   operating_system: "ubuntu22"
-  runtime_version: "8.2"
+  # runtime_version: "8.2"
 
 #[START gae_flex_storage_yaml]
 env_variables:
